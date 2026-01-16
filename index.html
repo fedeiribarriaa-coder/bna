@@ -28,17 +28,11 @@
 
         <input type="text" placeholder="">
 
-        <button class="btn-accept">
+        <button class="btn-accept" onclick="irAClave()">
             <span class="check">✔</span>
             Aceptar
         </button>
     </div>
- <script>
-function irAClave() {
-  // acá después podés agregar lógica si querés
-  window.location.href = "clave.html";
-}
-</script>
 
     <!-- Links -->
     <div class="links">
@@ -54,6 +48,13 @@ function irAClave() {
         <span class="close">✖</span>
         <p>Salir</p>
     </footer>
+
+    <!-- Script -->
+    <script>
+        function irAClave() {
+            window.location.href = "clave.html";
+        }
+    </script>
 
 </body>
 </html>
