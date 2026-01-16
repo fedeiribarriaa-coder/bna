@@ -131,3 +131,15 @@ body {
     margin: 4px 0 0;
     font-size: 14px;
 }
+
+.btn-row {
+    display: flex;
+    gap: 12px;
+    padding: 0 16px 16px;
+}
+
+.btn-row .btn-accept {
+    flex: 1;
+    justify-content: center;
+}
+
