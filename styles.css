@@ -69,18 +69,26 @@ body {
     border-radius: 3px;
 }
 
-/* Button */
+/* Botones */
+.btn-row {
+    display: flex;
+    gap: 12px;
+    padding: 0 16px 16px;
+}
+
 .btn-accept {
-    margin: 0 auto 16px;
+    flex: 1;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     background: #0b6f86;
     color: white;
     border: none;
-    padding: 10px 22px;
+    padding: 12px 0;
     border-radius: 4px;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .btn-accept .check {
@@ -113,7 +121,7 @@ body {
     margin-top: 14px;
 }
 
-/* Footer */
+/* Footer (Salir bien abajo) */
 .footer {
     margin-top: auto;
     background: #2b2b2b;
@@ -131,19 +139,3 @@ body {
     margin: 4px 0 0;
     font-size: 14px;
 }
-
-.btn-row {
-    display: flex;
-    gap: 12px;
-    padding: 0 16px 16px;
-}
-
-.btn-row .btn-accept {
-    flex: 1;
-    justify-content: center;
-}
-
-.footer {
-    margin-top: auto;
-}
-
